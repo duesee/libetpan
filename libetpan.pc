@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libetpan
+Description: Libetpan C library.
+Version: 1.9.4-dev-20200616
+Libs: -L${libdir} -letpan -lssl -lcrypto    -ldb-5.3 -lz  -pthread -lsasl2 -lssl -lcrypto 
+Cflags: -I${includedir}
